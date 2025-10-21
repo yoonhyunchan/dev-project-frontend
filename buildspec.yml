@@ -38,7 +38,7 @@ phases:
     commands:
       # S3에 dist 폴더 내용 동기화 및 업로드
       - echo Deploying to S3...
-      - aws s3 sync --delete dist/ s3://dev-onboarding-frontend-s3/
+      - aws s3 sync dist/ s3://dev-onboarding-frontend-s3/
       # --delete 옵션: S3에는 있지만 로컬(dist)에는 없는 파일을 S3에서 삭제하여 동기화합니다.
 
 # ----------------------------------------
