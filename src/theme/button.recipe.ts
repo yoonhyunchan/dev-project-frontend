@@ -7,7 +7,8 @@ export const buttonRecipe = defineRecipe({
     alignItems: "center",
     justifyContent: "center",
     // colorPalette: "teal",
-    color: "#265E9A",
+    bg: "#265E9A",
+    color: "white",
   },
   variants: {
     variant: {
