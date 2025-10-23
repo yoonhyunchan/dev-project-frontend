@@ -52,5 +52,5 @@ jobs:
     - run: npm install
     - run: npm run build
 
-    - run: aws s3 sync dist/ s3://${{BUCKET_NAME}}/
+    - run: aws s3 sync dist/ s3://${{env.BUCKET_NAME}}/
     - run: aws cloudfront create-invalidation --distribution-id E297UAIR9Y96SE --paths "/*"
